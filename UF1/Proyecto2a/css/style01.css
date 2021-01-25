@@ -33,12 +33,12 @@
  }
  @font-face {
     font-family: "Text";
-    src: url("/Proyecto2a/fonts/Lato-Hairline.ttf") format("truetype");
+    src: url("../fonts/Lato-Hairline.ttf") format("truetype");
  }
  
  @font-face {
    font-family: "Main title";
-   src: url("/Proyecto2a/fonts/Lato-Light.ttf") format("truetype");
+   src: url("../fonts/Lato-Light.ttf") format("truetype");
 }
  
  .container {
