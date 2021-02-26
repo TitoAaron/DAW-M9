@@ -8,7 +8,14 @@ body{
     font-family: sans-serif;
     
 }
-
+button{
+    background-color:rgba(223, 141, 10, 0.87);
+    color:white;
+    height: 40px;
+    width: 120px;
+    border: none;
+    font-weight: bold;
+}
 #nav1{
     display: flex;
     background-color: rgb(246, 243, 237);
@@ -69,7 +76,6 @@ body{
     list-style: none;
     margin: 0px;
     display: inline-block;
-    float: left;
 }
 
 .logos_size{
@@ -184,4 +190,37 @@ section{
     display: flex;
     flex-wrap: wrap;
     margin:0px 20px 0px 20px;
+}
+
+/*objetos2*/
+.objimg2 img{
+    height: 100%;
+    width: 100%;
+}
+
+.objimg2{
+    float: left;
+    height: 80px;
+    width: 100px;
+  
+    margin:15px;
+}
+
+.objeto2 {
+    height: 120px;
+    width: 320px;
+    padding: 10px;
+    background-color: rgb(224, 222, 222);
+}
+
+.objeto2 p,button{
+    margin:10px;
+}
+
+#escaparate_pequeño{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
 }

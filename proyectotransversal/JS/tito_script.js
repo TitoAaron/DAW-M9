@@ -7,12 +7,25 @@ var items = [
     ["img/plancha.jpg","Plancha muy caliente","$81.00"],
     ["img/mouse_gaming.jpg","Raton para jugar","$20.50"],
     ["img/tableta_grafica.jpg","Tableta para dibujar","$80.00"]
-]
+];
 
-
+var items2 = [
+    ["img/gameaccesories.jpg","Game Accesories"],
+    ["img/multdev.jpg","Multimedia Devices"],
+    ["img/computeraccesories.jpg","Computer accesories"]
+    
+    
+];
 
 //crear un div con una imagen, descripcion y su precio.
-function addObjetos(){
+
+
+function cargarObjetos(){
+    addObjetos1();
+    addObjetos2();
+}
+
+function addObjetos1(){
 for(x = 0; x < items.length; x++){
     var escaparate = document.getElementById("escaparate");
     var div = document.createElement("div");
@@ -29,6 +42,27 @@ for(x = 0; x < items.length; x++){
     div.appendChild(divimg);
     div.appendChild(descripcion);
     div.appendChild(precio);
+    escaparate.appendChild(div);
+    }
+}
+
+function addObjetos2(){
+    for(x = 0; x <items2.length; x++){
+    escaparate = document.getElementById("escaparate_pequeño");
+    div = document.createElement("div");
+    divimg = document.createElement("div");
+    imagen = document.createElement("img"); 
+    descripcion = document.createElement("p");
+    boton = document.createElement("button");
+    boton.innerText = "SHOP NOW";
+    div.className = "objeto2";
+    divimg.className = "objimg2";
+    imagen.src = items2[x][0];
+    descripcion.innerText = items2[x][1];
+    divimg.appendChild(imagen);
+    div.appendChild(divimg);
+    div.appendChild(descripcion);
+    div.appendChild(boton);
     escaparate.appendChild(div);
     }
 }
