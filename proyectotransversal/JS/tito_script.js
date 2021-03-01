@@ -23,18 +23,24 @@ var items2 = [
 function cargarObjetos(){
     addObjetos1();
     addObjetos2();
+    addObjetos3();
 }
 
+   
+
+
 function addObjetos1(){
+   
 for(x = 0; x < items.length; x++){
-    var escaparate = document.getElementById("escaparate");
+    var escaparate = document.getElementsByClassName("escaparate")[0];
     var div = document.createElement("div");
     var divimg = document.createElement("div");
     var imagen = document.createElement("img"); 
     var descripcion = document.createElement("p");
     var precio = document.createElement("p");
+    precio.className = "precio";
     div.className = "objeto";
-    divimg.className = "objimg"
+    divimg.className = "objimg";
     imagen.src = items[x][0];
     descripcion.innerText = items[x][1];
     precio.innerText = items[x][2];
@@ -66,3 +72,40 @@ function addObjetos2(){
     escaparate.appendChild(div);
     }
 }
+
+
+function addObjetos3(){
+    for(x = 0; x <= 3; x++){
+        var escaparate = document.getElementsByClassName("escaparate")[1];
+        var div = document.createElement("div");
+        var divimg = document.createElement("div");
+        var imagen = document.createElement("img"); 
+        var descripcion = document.createElement("p");
+        var precio = document.createElement("p");
+        var tiempo = document.createElement("div");
+        var boton = document.createElement("button");
+        var tiempoHoras = document.createElement("p");
+        var formatoHora = document.createElement("p");
+        precio.className = "precio";
+        tiempo.className = "timer";
+        tiempoHoras.innerText = "365 7 23 52"
+        formatoHora.innerText = "Days Hour Min Sec"
+        boton.innerText = "ADD TO CART";
+        div.className = "objeto";
+        divimg.className = "objimg";
+        boton.className = "add";
+        imagen.src = items[x][0];
+        descripcion.innerText = items[x][1];
+        precio.innerText = items[x][2];
+        tiempo.appendChild(tiempoHoras);
+        tiempo.appendChild(formatoHora);
+        divimg.appendChild(imagen);
+        divimg.appendChild(tiempo);
+        div.appendChild(divimg);
+        div.appendChild(descripcion);
+        div.appendChild(boton);
+        div.appendChild(precio);
+        escaparate.appendChild(div);
+        }
+
+    }

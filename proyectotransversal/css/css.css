@@ -23,6 +23,11 @@ button{
     font-size:17px;
 }
 
+.subtitol{
+    text-align: center;
+    margin-top:15px; 
+}
+
 /*menus dropdown*/
 
 
@@ -118,7 +123,6 @@ button{
     transform: translate(-50%, -50%);
     font-size: 3vw;
     color: rgb(250, 250, 250);
-    filter: none
 }
 
 #info1{
@@ -148,11 +152,12 @@ h1{
     max-width: 50%;
 }
 
+
 #musica{
-    width: auto;
     display: flex;
     flex-direction: column;
     color: rgb(189, 46, 46);
+    margin-left: 400px;
 }
 /*------*/
 
@@ -161,6 +166,9 @@ section{
 }
 
 /*Seccion objetos*/
+.precio{
+    color: orange;
+}
 .objimg img{
     max-height: 100%;
     max-width: 100%;
@@ -168,6 +176,7 @@ section{
     margin: auto;
 }
 .objimg{
+    position: relative;
     width: 100%;
     height: 70%;
     border: 1px solid rgba(192, 191, 191, 0.664);
@@ -179,17 +188,16 @@ section{
     margin: 20px;
 
 }
-.objeto p:last-child{
-    color: rgb(196, 137, 12);
-}
+
 .objeto p{
     font-weight: bold;
     margin: 10px;
 }
-#escaparate{
+.escaparate{
     display: flex;
     flex-wrap: wrap;
     margin:0px 20px 0px 20px;
+    margin: auto;
 }
 
 /*objetos2*/
@@ -223,4 +231,26 @@ section{
     margin-left: 50px;
     margin-right: 50px;
     justify-content: space-between;
+}
+/*objetos 3*/
+.timer{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+    width: 95%;
+    text-align: center;
+    word-spacing: 2em;
+    padding: 5px;
+}
+.timer p:last-child{
+    word-spacing: 1em;
+    font-weight: normal;
+}
+.add{
+    float: left;
+    margin-top: -5px;
 }
