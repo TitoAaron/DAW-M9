@@ -13,9 +13,8 @@ var items2 = [
     ["img/gameaccesories.jpg","Game Accesories"],
     ["img/multdev.jpg","Multimedia Devices"],
     ["img/computeraccesories.jpg","Computer accesories"]
-    
-    
 ];
+
 
 //crear un div con una imagen, descripcion y su precio.
 
@@ -26,11 +25,7 @@ function cargarObjetos(){
     addObjetos3();
 }
 
-   
-
-
 function addObjetos1(){
-   
 for(x = 0; x < items.length; x++){
     var escaparate = document.getElementsByClassName("escaparate")[0];
     var div = document.createElement("div");
