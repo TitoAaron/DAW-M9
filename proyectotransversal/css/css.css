@@ -195,8 +195,7 @@ section{
 .escaparate{
     display: flex;
     flex-wrap: wrap;
-    margin:0px 20px 0px 20px;
-    margin: auto;
+    justify-content: center
 }
 
 /*objetos2*/
@@ -218,6 +217,7 @@ section{
     width: 320px;
     padding: 10px;
     background-color: rgb(224, 222, 222);
+    margin-left: 100px;
 }
 
 .objeto2 p,button{
@@ -227,9 +227,7 @@ section{
 #escaparate_pequeño{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 50px;
-    margin-right: 50px;
-    justify-content: space-between;
+    justify-content: center;
 }
 /*objetos 3*/
 .timer{
@@ -245,14 +243,17 @@ section{
     word-spacing: 2em;
     padding: 5px;
 }
+
 .timer p:last-child{
     word-spacing: 1em;
     font-weight: normal;
 }
+
 .add{
     float: left;
     margin-top: -5px;
 }
+
 /*objetos 4*/
 .objeto3{
     width: 200px;
