@@ -4,7 +4,6 @@
     
 }
 body{
-    padding: 30px;
     font-family: sans-serif;
     
 }
@@ -114,7 +113,7 @@ button{
     filter: brightness(0.8);
 }
 .texto_introducir h2{
-    font-size: 4vw;
+    font-size: 2vw;
 }
 .texto_introducir{
     position: absolute;
@@ -127,7 +126,8 @@ button{
 
 #info1{
     display: flex;
-    justify-content: space-around;padding-top:35px;
+    justify-content: space-around;
+    padding-top:35px;
 }
  i{
     font-size: 15px;
@@ -217,7 +217,7 @@ section{
     width: 320px;
     padding: 10px;
     background-color: rgb(224, 222, 222);
-    margin-left: 100px;
+    margin-right: 80px;
 }
 
 .objeto2 p,button{
@@ -228,6 +228,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 /*objetos 3*/
 .timer{
@@ -257,6 +258,63 @@ section{
 /*objetos 4*/
 .objeto3{
     width: 200px;
-    margin: 20px;
-    border: 1px solid black;
+    margin: 20px 10px 20px 10px;
+    border: 1px solid rgba(218, 210, 210, 0.637);
+    padding: 10px;
+}
+
+.objeto3 p{
+    font-weight: bold;
+}
+.objeto3 ul, li{
+    list-style: none;
+}
+
+.objimg3 img{
+    width: 100%;
+    height: 100px;
+}
+
+/*footer*/
+footer{
+    margin-top: 200px;
+}
+
+#footer1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 100px 50px 100px;
+    background-color: rgba(238, 246, 248, 0.808);
+}
+.xs{
+    width: 200px;
+}
+.xl{
+    width: 250px;
+}
+
+
+#email{
+    height: 20px;
+    width: 180px;
+    padding: 5px;
+}
+
+#footer1 ul li:first-child{
+    font-weight: bold;
+    margin-left: 10px;
+}
+#footer1 button{
+    width: 50px;
+    margin: 0px;
+    height: 35px;
+}
+
+#footer2{
+    padding-top: 20px;
+    height: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
 }
