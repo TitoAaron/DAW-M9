@@ -146,19 +146,28 @@ h1{
     font-size: 30px;
 }
 
-/*Musica*/
-#musica img,audio{
-    min-width: 30%;
-    max-width: 50%;
+/*Multimedia*/
+#multimedia{
+    border: 1px solid rgba(218, 218, 218, 0.774);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 100px;
+    padding: 25px;
+    background-color: rgb(163, 159, 159);
+}
+
+#multimedia div{
+    margin: 10px;
+    margin-bottom:40px ;
 }
 
 
-#musica{
-    display: flex;
-    flex-direction: column;
-    color: rgb(189, 46, 46);
-    margin-left: 400px;
+#multimedia video,iframe,audio{
+    height: 100%;
+    width: 100%;
+
 }
+
 /*------*/
 
 section{
