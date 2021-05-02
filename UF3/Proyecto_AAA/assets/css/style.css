@@ -1,0 +1,17 @@
+#mapa{
+    width: 100%;
+     height: 500px;
+    border:0;
+}
+a:focus, input:focus, textarea:focus, button:focus {
+    outline: 1px solid red !important;
+  }
+
+*{
+    color: black !important;
+    font-size: larger;
+}
+
+.main-button, .main-button-slider{
+background-color: white !important;
+}
